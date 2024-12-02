@@ -6,7 +6,7 @@
 /*   By: abdel-ha <abdel-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 14:04:32 by abdel-ha          #+#    #+#             */
-/*   Updated: 2024/12/02 14:04:33 by abdel-ha         ###   ########.fr       */
+/*   Updated: 2024/12/02 16:01:39 by abdel-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
+#  define BUFFER_SIZE 214748364
 # endif
 
 char	*get_next_line(int fd);
