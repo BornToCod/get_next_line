@@ -1,4 +1,4 @@
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_strlen(char *s)
 {
@@ -94,19 +94,19 @@ char	*read_data_from_buffer(char **leftover, int fd)
 
 char	*get_next_line(int fd)
 {
-	static char	*leftover;
+	static char	*leftover[1024];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || BUFFER_SIZE > __INT_MAX__)
 		return (NULL);
-	if (leftover && ft_strchr(leftover, '\n'))
-		return (fill_line(&leftover));
-	line = read_data_from_buffer(&leftover, fd);
-	if (!line && *leftover)
+	if (leftover[fd] && ft_strchr(leftover[fd], '\n'))
+		return (fill_line(&(leftover[fd])));
+	line = read_data_from_buffer(&(leftover[fd]), fd);
+	if (!line && *leftover[fd])
 	{
-		line = ft_strdup(leftover);
-		free(leftover);
-		leftover = NULL;
+		line = ft_strdup(leftover[fd]);
+		free(leftover[fd]);
+		leftover[fd] = NULL;
 	}
 	return (line);
 }
