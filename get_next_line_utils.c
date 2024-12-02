@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abdel-ha <abdel-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/26 18:23:21 by abdel-ha          #+#    #+#             */
-/*   Updated: 2024/12/02 09:31:04 by abdel-ha         ###   ########.fr       */
+/*   Created: 2024/12/02 14:04:42 by abdel-ha          #+#    #+#             */
+/*   Updated: 2024/12/02 14:04:43 by abdel-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char	*ft_strdup(char *s1)
 	ft_strcpy(result, s1);
 	return (result);
 }
-
 
 char	*ft_strchr(char *s, int c)
 {
@@ -74,7 +73,7 @@ char	*ft_strjoin(char *s1, char *s2)
 
 char	*ft_substr(char *s, int start, int len)
 {
-	int	i;
+	int		i;
 	char	*ptr;
 
 	if (!s)

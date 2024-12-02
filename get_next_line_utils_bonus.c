@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abdel-ha <abdel-ha@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/02 14:04:49 by abdel-ha          #+#    #+#             */
+/*   Updated: 2024/12/02 14:06:54 by abdel-ha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line_bonus.h"
 
 char	*ft_strcpy(char *dest, char *src)
@@ -26,7 +38,6 @@ char	*ft_strdup(char *s1)
 	ft_strcpy(result, s1);
 	return (result);
 }
-
 
 char	*ft_strchr(char *s, int c)
 {
@@ -62,7 +73,7 @@ char	*ft_strjoin(char *s1, char *s2)
 
 char	*ft_substr(char *s, int start, int len)
 {
-	int	i;
+	int		i;
 	char	*ptr;
 
 	if (!s)
